@@ -31,7 +31,7 @@ export default function Skills() {
   const loopedSkills = [...skills, ...skills]
 
   return (
-    <section className="skills-section mt-16 w-full overflow-hidden rounded-3xl px-16 py-12 sm:px-6">
+    <section className="skills-section mt-16 w-full overflow-hidden rounded-3xl px-4 py-10 sm:px-6 sm:py-12">
       <div className="skills-bg-grid" />
       <div className="skills-bg-wave" />
       <div className="skills-bg-shape skills-bg-shape--one" />

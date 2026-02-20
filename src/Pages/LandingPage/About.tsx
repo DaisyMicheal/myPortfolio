@@ -1,13 +1,13 @@
-import { profile } from '../../assets/images'
+import { profile2, profile3 } from '../../assets/images'
 import { Sparkles } from 'lucide-react'
 
 export default function About() {
  return (
-  <section className="about-creative relative mx-auto mt-20 w-full max-w-5xl px-6 pb-16">
+  <section className="about-creative relative mx-auto mt-16 w-full max-w-5xl px-4 pb-16 sm:mt-20 sm:px-6">
    <div className="about-orb about-orb--violet" />
    <div className="about-orb about-orb--mint" />
 
-   <div className="relative grid items-start gap-12 lg:grid-cols-[1.15fr_0.85fr]">
+   <div className="relative grid items-start gap-10 sm:gap-12 lg:grid-cols-[1.15fr_0.85fr]">
     <div>
      <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/70 px-4 py-2 text-xs font-semibold tracking-[0.18em] text-black/60 backdrop-blur">
       <Sparkles size={14} className="text-violet-500" />
@@ -15,10 +15,10 @@ export default function About() {
      </div>
 
      <h2 className="mt-5 text-2xl font-bold tracking-tight text-black sm:text-3xl">
-      About My Craft
+      About Me
      </h2>
 
-     <div className="mt-7 space-y-7 text-sm leading-relaxed text-black/60">
+     <div className="mt-7 space-y-6 text-sm leading-relaxed text-black/60 sm:space-y-7 sm:text-base">
       <p>
        I enjoy building things that make sense: clean, structured, and
        intentional.
@@ -39,7 +39,7 @@ export default function About() {
     <div className="relative mx-auto mt-6 w-full max-w-sm">
      <div className="about-main-photo">
       <img
-       src={profile}
+       src={profile2}
        alt="Mercy Chisom portrait"
        className="h-full w-full object-cover"
       />
@@ -48,7 +48,7 @@ export default function About() {
 
      <div className="about-side-photo">
       <img
-       src={profile}
+       src={profile3}
        alt="Creative profile detail"
        className="h-full w-full object-cover saturate-125 contrast-95"
       />

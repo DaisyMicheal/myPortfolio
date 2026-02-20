@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import {
   aiStudyBud,
-  dashboard,
   foodApp,
   learningweb,
   nuvix,
@@ -23,7 +22,7 @@ function getRelativeOffset(index: number, activeIndex: number, total: number) {
 
 export default function Slider() {
   const projects: Project[] = [
-    { image: dashboard, alt: 'Dashboard project preview' },
+    { image: learningweb, alt: 'Project preview' },
     { image: foodApp, alt: 'Food app project preview' },
     { image: recipeApp, alt: 'Recipe app project preview' },
     { image: learningweb, alt: 'Learning web project preview' },
@@ -55,11 +54,11 @@ export default function Slider() {
           const isVisible = Math.abs(offset) <= 2
 
           const transformMap: Record<number, string> = {
-            [-2]: 'translate(-50%, -50%) translateX(-212%) scale(0.72)',
-            [-1]: 'translate(-50%, -50%) translateX(-108%) scale(0.86)',
+            [-2]: 'translate(-50%, -50%) translateX(-170%) scale(0.72)',
+            [-1]: 'translate(-50%, -50%) translateX(-90%) scale(0.86)',
             [0]: 'translate(-50%, -50%) translateX(0%) scale(1)',
-            [1]: 'translate(-50%, -50%) translateX(108%) scale(0.86)',
-            [2]: 'translate(-50%, -50%) translateX(212%) scale(0.72)',
+            [1]: 'translate(-50%, -50%) translateX(90%) scale(0.86)',
+            [2]: 'translate(-50%, -50%) translateX(170%) scale(0.72)',
           }
 
           const opacityMap: Record<number, number> = {

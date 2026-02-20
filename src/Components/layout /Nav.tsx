@@ -1,57 +1,67 @@
-"use client"
-
-import { useState } from "react"
 import { Home, X, Github, FileText } from "lucide-react"
+import { Link } from 'react-router'
+import cvFile from '../../assets/UZOCHUKWU MERCY CHISOM (1).pdf'
 
 export default function Navbar() {
-  const [active, setActive] = useState("blog")
-
-  const navItems = [
-    { id: "home", icon: Home },
-    { id: "x", icon: X },
-    { id: "github", icon: Github },
-    { id: "docs", icon: FileText },
-  ]
+  const TWITTER_URL = 'https://x.com'
+  const GITHUB_URL = 'https://github.com/DaisyMicheal'
+  const BEHANCE_URL = 'https://www.behance.net/'
+  const CV_URL = cvFile
 
   return (
-    <div className="fixed top-6 left-1/2 z-50 -translate-x-1/2">
-      <div className="flex items-center gap-4 px-6 py-2
+    <div className="fixed left-1/2 top-3 z-50 w-[calc(100%-1rem)] -translate-x-1/2 px-2 sm:top-6 sm:w-auto sm:px-0">
+      <div className="mx-auto flex max-w-full items-center gap-2 overflow-x-auto px-3 py-2 sm:gap-4 sm:px-6
                       bg-white/70 backdrop-blur-xl 
                       border border-white/40
                       shadow-lg shadow-black/5
-                      rounded-2xl">
-
-        {navItems.map((item, index) => {
-          const Icon = item.icon
-          return (
-            <div key={item.id} className="flex items-center gap-6">
-              <button
-                onClick={() => setActive(item.id)}
-                className="p-2 rounded-xl text-gray-500 hover:text-black 
-                           hover:scale-110 transition-all duration-200"
-              >
-                <Icon size={20} />
-              </button>
-
-              {/* Divider after first icon */}
-              {index === 0 && (
-                <div className="w-px h-5 bg-gray-300" />
-              )}
-            </div>
-          )
-        })}
-
-        {/* Blog Button with Animated Active State */}
-        <button
-          onClick={() => setActive("blog")}
-          className={`relative px-5 py-2 text-sm font-medium rounded-lg 
-                      transition-all duration-300 ${active === "blog"
-              ? "bg-black text-white shadow-md"
-              : "text-gray-600 hover:text-black"
-            }`}
+                      rounded-xl sm:rounded-2xl">
+        <Link
+          to="/"
+          aria-label="Go to home page"
+          className="shrink-0 rounded-xl p-2 text-gray-500 transition-all duration-200 hover:scale-110 hover:text-black"
         >
-          Blog
-        </button>
+          <Home size={18} />
+        </Link>
+
+        <div className="h-5 w-px bg-gray-300" />
+
+        <a
+          href={TWITTER_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open X (Twitter)"
+          className="shrink-0 rounded-xl p-2 text-gray-500 transition-all duration-200 hover:scale-110 hover:text-black"
+        >
+          <X size={18} />
+        </a>
+
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Open GitHub profile"
+          className="shrink-0 rounded-xl p-2 text-gray-500 transition-all duration-200 hover:scale-110 hover:text-black"
+        >
+          <Github size={18} />
+        </a>
+
+        <a
+          href={CV_URL}
+          download
+          aria-label="Download CV"
+          className="shrink-0 rounded-xl p-2 text-gray-500 transition-all duration-200 hover:scale-110 hover:text-black"
+        >
+          <FileText size={18} />
+        </a>
+
+        <a
+          href={BEHANCE_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="relative shrink-0 whitespace-nowrap rounded-lg bg-black px-3 py-2 text-xs font-medium text-white shadow-md transition-all duration-300 hover:scale-[1.02] sm:px-5 sm:text-sm"
+        >
+          Behance
+        </a>
       </div>
     </div>
   )

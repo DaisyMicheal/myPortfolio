@@ -5,8 +5,8 @@ type ContainerProps = {
 
 function Container({ children }: ContainerProps) {
   return (
-    <div className=' min-h-screen '>
-      <div className='mx-auto max-w-7xl px-6'>{children}</div>
+    <div className='min-h-screen px-2 sm:px-4'>
+      <div className='mx-auto w-full max-w-5xl md:border-x md:border-black/10'>{children}</div>
     </div>
   )
 }

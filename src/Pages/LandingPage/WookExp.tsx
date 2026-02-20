@@ -1,9 +1,8 @@
 const experiences = [
- { period: 'Sept 2024-Present', role: 'Founder & CEO', company: 'Pxxl App' },
- { period: 'Feb 2026-Present', role: 'Mobile App Developer', company: 'Rinku Technology Limited.' },
- { period: '2025-Present', role: 'Frontend Developer', company: 'Steadfast Int.' },
- { period: '2024-Present', role: 'Fullstack Developer', company: 'TheEccomerceBoss' },
- { period: '2019-2022', role: 'Backend Developer', company: 'OrganStation' },
+ { period: ' October 2025', role: 'UI UX Designer', company: 'Raba' },
+ { period: 'June 2025', role: 'wordpress developer', company: 'Freelancer' },
+ { period: '2021', role: 'Frontend Developer', company: 'volunteer' },
+
 ]
 
 export default function WookExp() {
@@ -15,11 +14,11 @@ export default function WookExp() {
     Work Experience
    </h2>
 
-   <div className="mt-8 space-y-8 ">
+   <div className="mt-8 space-y-7 sm:space-y-8">
     {experiences.map((item) => (
      <div
       key={`${item.period}-${item.company}`}
-      className="grid items-center gap-16 sm:grid-cols-[170px_1fr]"
+      className="grid items-center gap-4 sm:gap-12 md:gap-16 sm:grid-cols-[170px_1fr]"
      >
       <p className="text-sm text-black/45 sm:text-sm">{item.period}</p>
 
