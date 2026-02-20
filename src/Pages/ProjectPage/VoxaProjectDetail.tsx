@@ -1,6 +1,6 @@
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import Button from '../../Components/ui/button'
-import profile from '../../assets/images/profile.jpg'
+import { profile, VoxaUi } from '../../assets/images/index'
 import { type ProjectDetailData } from './types'
 
 type VoxaProjectDetailProps = {
@@ -368,6 +368,21 @@ export default function VoxaProjectDetail({
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-8 rounded-2xl bg-white p-5 sm:p-8">
+        <h2 className="text-xl font-semibold text-black sm:text-2xl">UI Interface</h2>
+        <p className="mt-2 text-sm leading-relaxed text-black/65 sm:text-base">
+          Final interface screens focused on clarity, fast action, and confident voice-based transaction flow.
+        </p>
+
+        <div className="mt-5 overflow-hidden rounded-2xl border border-black/10 bg-[#f6f6f8] p-2 sm:p-3">
+          <img
+            src={VoxaUi}
+            alt="Voxa UI interface screens"
+            className="w-full object-contain"
+          />
         </div>
       </section>
 

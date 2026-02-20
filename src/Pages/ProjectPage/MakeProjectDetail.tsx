@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import Button from '../../Components/ui/button'
 import { MakeDesktopMockup, MakePhoneMockup } from '../../assets/images'
-import profile from '../../assets/images/profile.jpg'
+import { profile } from '../../assets/images/index'
 import { type ProjectDetailData } from './types'
 
 type MakeProjectDetailProps = {

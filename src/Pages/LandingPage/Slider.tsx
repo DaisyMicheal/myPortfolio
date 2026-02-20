@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react'
 import {
   aiStudyBud,
   foodApp,
-  learningweb,
-  nuvix,
+  headerImg,
   recipeApp,
   voxaWeb,
-} from '../../assets/images'
+} from '../../assets/images/index'
 
 type Project = {
   image: string
@@ -22,11 +21,10 @@ function getRelativeOffset(index: number, activeIndex: number, total: number) {
 
 export default function Slider() {
   const projects: Project[] = [
-    { image: learningweb, alt: 'Project preview' },
+
     { image: foodApp, alt: 'Food app project preview' },
     { image: recipeApp, alt: 'Recipe app project preview' },
-    { image: learningweb, alt: 'Learning web project preview' },
-    { image: nuvix, alt: 'Nuvix project preview' },
+    { image: headerImg, alt: 'ecommerceweb project preview' },
     { image: voxaWeb, alt: 'Voxa web project preview' },
     { image: aiStudyBud, alt: 'AI Study Bud project preview' },
   ]

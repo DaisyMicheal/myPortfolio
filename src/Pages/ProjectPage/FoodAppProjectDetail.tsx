@@ -50,7 +50,7 @@ export default function FoodAppProjectDetail({
                 <img
                   src={img}
                   alt={`${project.title} showcase ${index + 1}`}
-                  className="h-40 w-full rounded-[12px] object-cover sm:h-48"
+                  className="h-48 w-full rounded-[12px] object-contain sm:h-56"
                 />
               </div>
             </div>

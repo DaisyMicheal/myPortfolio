@@ -209,10 +209,10 @@ export default function RecipeProjectDetail({
         <div className="relative mt-5 space-y-6">
           <article className="grid gap-4 rounded-2xl bg-white/60 p-4 transition-transform duration-500 hover:-translate-y-1 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-sm font-semibold text-black/85">Verified Babysitters</p>
+              <p className="text-sm font-semibold text-black/85">Smart Recipe Discovery</p>
               <p className="mt-2 text-xs leading-relaxed text-black/70 sm:text-sm">
-                Moms can connect with verified babysitters in their area and review profiles
-                before choosing the best support for their families.
+                Browse curated recipe categories, popular picks, and trending meals to quickly
+                find what to cook without endless scrolling.
               </p>
             </div>
             <div className="flex items-center justify-center gap-2">
@@ -234,20 +234,20 @@ export default function RecipeProjectDetail({
             </div>
 
             <div className="order-1 lg:order-2">
-              <p className="text-sm font-semibold text-black/85">Vaccination and medical tracker</p>
+              <p className="text-sm font-semibold text-black/85">Fast Search & Filters</p>
               <p className="mt-2 text-xs leading-relaxed text-black/70 sm:text-sm">
-                Stay organized with vaccination schedules, reminders, and important child health
-                records in one simple flow.
+                Use search and quick filters to narrow recipes by meal type, ingredients, and
+                preference so users can reach the right dish faster.
               </p>
             </div>
           </article>
 
           <article className="grid gap-4 rounded-2xl bg-white/60 p-4 transition-transform duration-500 hover:-translate-y-1 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-sm font-semibold text-black/85">E-Commerce for Mom & Baby Essentials</p>
+              <p className="text-sm font-semibold text-black/85">Recipe Details & Save Flow</p>
               <p className="mt-2 text-xs leading-relaxed text-black/70 sm:text-sm">
-                Discover curated essentials including food, skincare, and nutrition products with
-                an easy shopping experience inside the app.
+                Detailed ingredient steps, cooking guidance, and a clean favorite/save experience
+                help users return to the recipes they love.
               </p>
             </div>
             <div className="flex justify-center gap-3">

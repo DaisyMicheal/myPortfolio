@@ -22,6 +22,8 @@ import {
   Img1,
   Bookmark,
   voxaApp,
+  foodHome,
+  Dessert,
 } from '../../assets/images'
 import { type ProjectDetailData } from './types'
 
@@ -83,7 +85,8 @@ export const projectItems: ProjectItem[] = [
     image: MakeDesktopMockup,
     mockup: MakeDesktopMockup,
     gallery: [MakeDesktopMockup, MakePhoneMockup],
-    liveUrl: 'https://example.com/make-redesign',
+    liveUrl:
+      'https://www.figma.com/proto/gG5W23Pfpi8dPKdDtRZ5O2/make-redesign-website?node-id=1-1595&t=VO43ZR0bG5xalT5a-0&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1595',
   },
   {
     slug: 'food-app',
@@ -99,7 +102,7 @@ export const projectItems: ProjectItem[] = [
     type: 'Mobile Product Design',
     client: 'Concept',
     image: recipeFood,
-    gallery: [Bookmark],
+    gallery: [Bookmark, foodHome, Dessert],
     liveUrl: 'https://github.com/DaisyMicheal/Recipe_App.git',
   },
   {
@@ -117,7 +120,8 @@ export const projectItems: ProjectItem[] = [
     client: 'Concept',
     image: recipe,
     gallery: [recipe, recipe2, recipe3, recipe4],
-    liveUrl: 'https://example.com/recipe-app',
+    liveUrl:
+      'https://www.figma.com/proto/BfD7Qhc25UD3bAZ184zkq9/Untitled?node-id=1-2&t=q5dCkJUxEgX4uAsd-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1',
     caseStudy: {
       challenge:
         'Users struggled to find local recipes quickly and needed clearer steps, ingredients, and discovery paths.',
@@ -158,6 +162,7 @@ export const projectItems: ProjectItem[] = [
       Setup2,
       Setup3,
     ],
-    liveUrl: 'https://example.com/ai-study-bud',
+    liveUrl:
+      'https://www.figma.com/proto/OShKhqWoOeuEiuqNqVCSzC/2026-projects?node-id=1656-2261&t=iNSkFSDGKcHDBSaG-1',
   },
 ]

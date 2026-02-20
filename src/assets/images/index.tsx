@@ -1,11 +1,11 @@
-import profile from './profile.jpg'
-import profile1 from './profile1.jpeg'
-import profile2 from './profile2.jpeg'
-import profile3 from './profile3.jpeg'
+import profile from './Profiles/profile.jpg'
+import profile1 from './Profiles/profile1.jpeg'
+import profile2 from './Profiles/profile2.jpeg'
+import profile3 from './Profiles/profile3.jpeg'
 import foodApp from './wordpressProject/img2.png'
-import learningweb from './wordpressProject/headerimg.png'
+
 import nuvix from './MakeRedesignProject/MakeDesktopMockup.png'
-import voxaWeb from './VoxaWeb.png'
+
 import voxaApp from './VoxaApp.png'
 import recipeApp from './recipeApp/recipe.png'
 import aiStudyBud from './AiStudyBud/Home.jpg'
@@ -19,7 +19,6 @@ import SolMockup from './recipeApp/SolMockup.jpg'
 import RepMockup from './recipeApp/RepMockup.png'
 import onboardingMockup from './recipeApp/onboardingMockup.png'
 import HomeMockup from './recipeApp/HomeMockup.png'
-
 import AiChat from './AiStudyBud/Ai Chat.jpg'
 import Calender from './AiStudyBud/Calender.jpg'
 import Home from './AiStudyBud/Home.jpg'
@@ -33,13 +32,15 @@ import LandingMockup from './AiStudyBud/LandingMockup.png'
 
 import MakePhoneMockup from './MakeRedesignProject/phoneMockup.png'
 import MakeDesktopMockup from './MakeRedesignProject/MakeDesktopMockup.png'
-
+import voxaWeb from './VoxaWeb.png'
 import recipeFood from './flutterapp/recipe.png'
 import Bookmark from './flutterapp/bookmark.png'
-
+import VoxaUi from './VoxaUI.jpeg'
 import headerImg from './wordpressProject/headerimg.png'
 import Img1 from './wordpressProject/img2.png'
 import Img2 from './wordpressProject/img3.png'
+import foodHome from './flutterapp/home.png'
+import Dessert from './flutterapp/dessert.png'
 
 export {
  profile,
@@ -47,9 +48,11 @@ export {
  profile2,
  profile3,
  foodApp,
-
+ foodHome,
+ Dessert,
+ VoxaUi,
  voxaApp,
-
+ voxaWeb,
  nuvix,
  recipeApp,
  aiStudyBud,
