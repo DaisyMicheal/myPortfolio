@@ -37,8 +37,7 @@ export const projectItems: ProjectItem[] = [
     slug: 'ecommerce',
     title: 'Ecommerce Platform ',
     subtitle: 'Learning platform website.',
-    cardDescription:
-      'Educational platform website with clear service-focused landing structure.',
+    cardDescription: 'An e-commerce platform built for selling electrical',
     description:
       'An e-commerce platform built for selling electrical and solar products, including inverters, solar panels, batteries, lighting systems, and other power solutions. ',
     technologies: ['Wordpress'],
