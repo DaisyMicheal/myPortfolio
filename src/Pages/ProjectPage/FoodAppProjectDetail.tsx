@@ -1,7 +1,9 @@
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
+import { useState } from 'react'
 import Button from '../../Components/ui/button'
 import { type ProjectDetailData } from './types'
 import ProjectDetailHeader from '../../Components/ui/ProjectDetailHeader'
+import ImagePreviewModal from '../../Components/ui/ImagePreviewModal'
 
 type FoodAppProjectDetailProps = {
   project: ProjectDetailData
@@ -16,6 +18,7 @@ export default function FoodAppProjectDetail({
 }: FoodAppProjectDetailProps) {
   const galleryImages = project.gallery && project.gallery.length > 0 ? project.gallery : [project.image]
   const showcaseImages = galleryImages.length >= 3 ? galleryImages.slice(1, 3) : galleryImages.slice(0, 2)
+  const [previewImage, setPreviewImage] = useState<string | null>(null)
 
   return (
     <section className="mt-8 w-full px-4 pb-12 sm:px-6">
@@ -32,11 +35,18 @@ export default function FoodAppProjectDetail({
       <section className="mt-8">
         <div className="rounded-[28px] border border-black/10 bg-[#f3f3f3] p-3 shadow-[0_14px_35px_rgba(0,0,0,0.12)] sm:p-4">
           <div className="rounded-[22px] bg-[#111214] p-2 sm:p-3">
-            <img
-              src={galleryImages[0] ?? project.image}
-              alt={`${project.title} showcase main`}
-              className="h-[220px] w-full rounded-[16px] object-contain sm:h-[420px]"
-            />
+            <button
+              type="button"
+              onClick={() => setPreviewImage(galleryImages[0] ?? project.image)}
+              className="block w-full cursor-zoom-in"
+              aria-label={`Preview ${project.title} main image`}
+            >
+              <img
+                src={galleryImages[0] ?? project.image}
+                alt={`${project.title} showcase main`}
+                className="h-[220px] w-full rounded-[16px] object-contain sm:h-[420px]"
+              />
+            </button>
           </div>
         </div>
 
@@ -47,11 +57,18 @@ export default function FoodAppProjectDetail({
               className="rounded-[22px] border border-black/10 bg-[#f3f3f3] p-3"
             >
               <div className="rounded-[16px] bg-[#111214] p-2">
-                <img
-                  src={img}
-                  alt={`${project.title} showcase ${index + 1}`}
-                  className="h-48 w-full rounded-[12px] object-contain sm:h-56"
-                />
+                <button
+                  type="button"
+                  onClick={() => setPreviewImage(img)}
+                  className="block w-full cursor-zoom-in"
+                  aria-label={`Preview ${project.title} gallery image ${index + 1}`}
+                >
+                  <img
+                    src={img}
+                    alt={`${project.title} showcase ${index + 1}`}
+                    className="h-48 w-full rounded-[12px] object-contain sm:h-56"
+                  />
+                </button>
               </div>
             </div>
           ))}
@@ -100,6 +117,13 @@ export default function FoodAppProjectDetail({
           </Button>
         </div>
       </div>
+
+      <ImagePreviewModal
+        isOpen={Boolean(previewImage)}
+        imageSrc={previewImage ?? ''}
+        imageAlt={`${project.title} preview`}
+        onClose={() => setPreviewImage(null)}
+      />
     </section>
   )
 }
