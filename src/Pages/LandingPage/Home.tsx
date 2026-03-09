@@ -14,8 +14,9 @@ export default function Home() {
       <Header />
       <Slider />
       <About />
-      <Project />
       <WookExp />
+
+      <Project />
       <Skills />
       <Contact />
       <Footer variant="minimal" year={2026} name="Mercy Chisom" />

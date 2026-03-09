@@ -29,9 +29,9 @@ export default function Header() {
                </div>
             </div>
 
-            <h1 className="mt-6 text-3xl font-bold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+            <h1 className="mt-6 text-xl font-semibold leading-tight tracking-tight sm:text-2xl md:text-3xl">
                Hey, I&apos;m Mercy Chisom.
-               <span className="block">Frontend Dev &amp; UI/UX Designer</span>
+               <span className="block">Frontend Developer &amp; Product Designer</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-black/55 sm:text-lg">

@@ -50,6 +50,7 @@ export default function Navbar() {
           download
           aria-label="Download CV"
           className="shrink-0 rounded-xl p-2 text-gray-500 transition-all duration-200 hover:scale-110 hover:text-black"
+
         >
           <FileText size={18} />
         </a>

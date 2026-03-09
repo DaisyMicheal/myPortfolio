@@ -1,7 +1,7 @@
 const experiences = [
- { period: ' October 2025', role: 'UI UX Designer', company: 'Raba' },
- { period: 'June 2025', role: 'wordpress developer', company: 'Freelancer' },
- { period: '2021', role: 'Frontend Developer', company: 'volunteer' },
+ { period: ' October 2025', role: 'Product Designer', company: 'Raba' },
+ { period: '2023-present', role: 'Frontend Developer', company: 'Freelencer' },
+ { period: '2024-present', role: 'wordpress developer', company: 'Freelancer' },
 
 ]
 
